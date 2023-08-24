@@ -17,19 +17,49 @@ body {
     background-color: #ffb498;
     grid-column: 1/ 2;
     grid-row: 1 / 4;
-    grid-template-rows: 0.25fr 1fr 0.7fr 1fr;
+    grid-template-rows: 0.4fr 1.2fr 0.7fr 0.7fr;
     display: grid;
-
-
 }
 
+.header {
+    justify-content: center;
+    align-content: center;
+}
+
+.header > h1 {
+    display: inline;
+}
+
+.header > svg {
+    height: 2em;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-left: 40px;;
+}
 .tools {
     display: grid;
+}
+
+.tool1 > svg, .tool2 > svg, .tool3 > svg, .tool4 > svg, .tool5 >svg {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.tool6 > svg {
+    padding-left: 20px;
+    padding-right: 15px;;
 }
 
 .settings {
     display: grid;
     align-items: center;
+    padding-top: 20px;
+
+}
+
+.setting1 > svg, .setting2 > svg, .setting3 > svg {
+    padding-right: 20px;
+    padding-left: 20px;
 
 }
 
@@ -48,21 +78,36 @@ body {
 }
 
 .searchbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    display: inline;
     justify-content: center;
     align-items: center;
+    align-self: center;
+    padding-left: 20px;
 }
 
 .srch {
     height: 4vh;
+    width: 60vh;
+    border-radius: 5px;
+    background-color: lightgray;
 }
 
 .user-items {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 0.5fr 0.5fr 0.25fr;
     grid-template-rows: 1fr;
+    justify-content: center;
+    align-self: center;
+}
+
+.user-items > p {
+    justify-self: end;
+    padding-right: 20px;
+}
+
+.user-items > svg {
+    transform: translate(45vh, 2.5vh);
+
 }
 
 .about {
@@ -73,23 +118,37 @@ body {
 
 .left-side-about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 0.25fr 1fr;
     grid-template-rows: 1fr;
     align-self: center;
+    padding-left: 20px;
+
 
 }
 
 .right-side-about {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 0.5fr 0.5fr;
     grid-template-rows: 1fr;
-    align-self: center; 
+    align-self: center;
+    padding-right: 20px;
+
+
+}
+
+.right-side-about > button {
+    justify-self: end;
+    width: 12vh;
+    background-color: cornflowerblue;
+    color: white;
 
 }
 
 .btn1, .btn2, .btn3 {
     height: 4vh;
     width: 8vh;
+    border-radius: 12px;
+    border-color: cornflowerblue;
 
 }
 
@@ -129,12 +188,17 @@ body {
 
 }
 
+
+
 .project1, .project2, .project3, .project4, .project5, .project6{
     border-radius: 5px;
     background-color: white;
     box-shadow: 2px 2px 2px black;
 }
 
+.project1:hover, .project2:hover, .project3:hover, .project4:hover, .project5:hover, .project6:hover {
+transform: scale(1.07);
+}
 
 
 .announcements {
